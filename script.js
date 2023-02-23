@@ -118,5 +118,26 @@ ScoreDolphins = calcAverage(85,54,41);
 ScoreKobals = calcAverage(23,34,27);
 console.log(ScoreDolphins,ScoreKobals);
 checkWinner(ScoreDolphins, ScoreKobals);
-*/
 
+//{{{{{INTRODUCTION TO ARRAYS}}}}}
+const friend1 = 'Michael';
+const friend2 = 'steven';
+const friend3 = 'peter';
+const friends = ['Michael','steven','peter'];
+console.log(friends);
+const years = new Array(1991,1984,2008,2020);
+
+console.log(friends [0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = 'jaya';
+console.log(friends);
+// friends = ['bob' , 'Alice']
+const firstName = 'lucky';
+const lucky = ['lucky', 'jena', 2023-1998,'student',friends];
+console.log(lucky);
+console.log(lucky.length);
+*/
