@@ -91,7 +91,7 @@ const yearsUntilRetirement = function (birthYear,firstName){
 }
 console.log(yearsUntilRetirement(1991, 'lucky'));
 console.log(yearsUntilRetirement(1950, 'lucy'));
-*/
+
 //CODING CHALLENGE
 //TEST - 1:
 const calcAverage = (a,b,c) =>(a+b+c)/3;
@@ -118,4 +118,5 @@ ScoreDolphins = calcAverage(85,54,41);
 ScoreKobals = calcAverage(23,34,27);
 console.log(ScoreDolphins,ScoreKobals);
 checkWinner(ScoreDolphins, ScoreKobals);
+*/
 
