@@ -140,4 +140,42 @@ const firstName = 'lucky';
 const lucky = ['lucky', 'jena', 2023-1998,'student',friends];
 console.log(lucky);
 console.log(lucky.length);
+
+//EXERCISE
+const calcAge = function (birthYear){
+    return 2023 - birthYear;
+}
+const years = [1990, 1967 ,2002 ,2010 ,2018];
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length-1]);
+console.log(age1,age2,age3);
+
+const ages = [calcAge(years[0]),calcAge(years[1]),calcAge(years[years.length-1])];
+console.log(ages);
+
+const friends = ['Michael','steven','peter'];
+const newLength = friends.push('jay');
+console.log(friends);
+console.log(newLength);
+
+friends.unshift('John');
+console.log(friends);
+
+//remove elements
+friends.pop();//last
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+
+friends.shift();//first
+console.log(friends);
+
+friends.push(23);
+console.log(friends.includes('steven'));
+console.log(friends.includes('Bob'));
+console.log(friends.includes(23));
+if(friends.includes('steven')){
+    console.log('You have a friend called peter');
+}
 */
