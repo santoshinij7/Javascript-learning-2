@@ -178,7 +178,7 @@ console.log(friends.includes(23));
 if(friends.includes('steven')){
     console.log('You have a friend called peter');
 }
-*/
+
 //CODING CHALLENGE #2
 const calcTip = function(bill){
     return bill>= 50 && bill<= 300 ? bill*0.15:
@@ -190,3 +190,43 @@ const tips = [calcTip(bills[0]),calcTip(bills[1]),calcTip(bills[2])];
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(bills,tips,totals);
 
+//INTRO TO OBJECTS
+const luckyArray = [
+    'lucky',
+    'jena',
+    2037-1998,
+    'student',
+    ['Michale','peter','steven']
+];
+
+const lucky ={
+    firstName: 'lucky',
+    lastName:'jena',
+    age: 2037-1998,
+    job:'student',
+    friends: ['Michale','peter','steven']
+};
+console.log(lucky);
+console.log(lucky.lastName);
+console.log(lucky['lastName']);
+
+const nameKey  = 'Name';
+console.log(lucky['first' + nameKey]);
+console.log(lucky['last' + nameKey]);
+
+// console.log(lucky.'last'+ nameKey);
+const interestedIn = prompt('what do you want to know about lucky ? choose between firstName, lastName , age , job , and friends');
+console.log(lucky[interestedIn]);
+
+if(lucky[interestedIn]){
+    console.log(lucky[interestedIn]);
+}else{
+    console.log('wrong request! choose between firstName, lastName , age , job , and friends');
+}
+
+lucky.location = 'portugal';
+lucky['twitter'] = '@Santoshinilucky';
+console.log('lucky'); 
+
+console.log(`${lucky.firstName} has ${lucky.friends.length}, and his best friend is called ${lucky.friends[0]}`);
+*/
